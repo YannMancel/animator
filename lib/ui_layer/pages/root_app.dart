@@ -1,4 +1,4 @@
-import 'package:animator/ui_layer/home_page.dart';
+import 'package:animator/ui_layer/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 /// A [StatelessWidget] subclass.
