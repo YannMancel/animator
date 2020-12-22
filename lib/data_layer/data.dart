@@ -1,6 +1,7 @@
 import 'package:animator/data_layer/section.dart';
 import 'package:animator/ui_layer/animations/animated_container.dart';
 import 'package:animator/ui_layer/animations/animated_cross_fade.dart';
+import 'package:animator/ui_layer/animations/animated_default_text_style.dart';
 import 'package:animator/ui_layer/animations/animated_opacity.dart';
 import 'package:animator/ui_layer/animations/fade_in_image.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +24,11 @@ final animations = <Section>[
   Section(
       title: "AnimatedCrossFade",
       icon: Icons.style,
-      destination: AnimatedCrossFadeWidget())
+      destination: AnimatedCrossFadeWidget()),
+  Section(
+      title: "AnimatedDefaultTextStyle",
+      icon: Icons.ac_unit_rounded,
+      destination: AnimatedDefaultTextStyleWidget()),
 ];
 
 // -- Images --
