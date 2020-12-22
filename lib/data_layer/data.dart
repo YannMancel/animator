@@ -3,6 +3,7 @@ import 'package:animator/ui_layer/animations/animated_container.dart';
 import 'package:animator/ui_layer/animations/animated_cross_fade.dart';
 import 'package:animator/ui_layer/animations/animated_default_text_style.dart';
 import 'package:animator/ui_layer/animations/animated_opacity.dart';
+import 'package:animator/ui_layer/animations/animated_size.dart';
 import 'package:animator/ui_layer/animations/fade_in_image.dart';
 import 'package:flutter/material.dart';
 
@@ -29,6 +30,10 @@ final animations = <Section>[
       title: "AnimatedDefaultTextStyle",
       icon: Icons.ac_unit_rounded,
       destination: AnimatedDefaultTextStyleWidget()),
+  Section(
+      title: "AnimatedSize",
+      icon: Icons.stream,
+      destination: AnimatedSizeWidget()),
 ];
 
 // -- Images --

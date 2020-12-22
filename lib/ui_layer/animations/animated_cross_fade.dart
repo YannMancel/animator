@@ -28,7 +28,7 @@ class _AnimatedCrossFadeWidgetState extends State<AnimatedCrossFadeWidget> {
                     style: FlutterLogoStyle.stacked, size: 100.0),
                 crossFadeState: _selected
                     ? CrossFadeState.showFirst : CrossFadeState.showSecond,
-                duration: Duration(seconds: 1),
+                duration: const Duration(seconds: 1),
               firstCurve: Curves.linear,
               secondCurve: Curves.linear),
             onTap: () => setState(() => _selected = !_selected)));

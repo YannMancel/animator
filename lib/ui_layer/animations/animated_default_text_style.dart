@@ -22,14 +22,14 @@ class _AnimatedDefaultTextStyleWidgetState extends State<AnimatedDefaultTextStyl
     return Center(
         child: GestureDetector(
             child: AnimatedDefaultTextStyle(
-                child: Text("Flutter"),
+                child: const Text("Flutter"),
                 style: _selected
-                    ? TextStyle(
+                    ? const TextStyle(
                           color: Colors.blue,
                           fontWeight: FontWeight.bold,
                           fontSize: 40.0)
-                    : TextStyle(color: Colors.red, fontSize: 80.0),
-                duration: Duration(seconds: 1),
+                    : const TextStyle(color: Colors.red, fontSize: 80.0),
+                duration: const Duration(seconds: 1),
                 curve: Curves.elasticInOut),
             onTap: () => setState(() => _selected = !_selected)));
   }
