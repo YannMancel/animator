@@ -6,7 +6,7 @@ class FadeInImageWidget extends StatelessWidget {
 
   // FIELDS --------------------------------------------------------------------
 
-  final _url = "https://avatars0.githubusercontent.com/u/44132125?v=4";
+  static const _url = "https://avatars0.githubusercontent.com/u/44132125?v=4";
 
   // METHODS -------------------------------------------------------------------
 
@@ -20,7 +20,7 @@ class FadeInImageWidget extends StatelessWidget {
             image: NetworkImage(_url),
             fadeInCurve: Curves.linear,
             fadeOutCurve: Curves.linear,
-            fadeInDuration: Duration(seconds: 1),
-            fadeOutDuration: Duration(seconds: 1)));
+            fadeInDuration: const Duration(seconds: 1),
+            fadeOutDuration: const Duration(seconds: 1)));
   }
 }

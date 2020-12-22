@@ -31,15 +31,15 @@ class _AnimatedContainerWidgetState extends State<AnimatedContainerWidget> {
                         BoxShadow(
                             color: _selected
                                 ? Colors.redAccent : Colors.blueAccent,
-                            offset: Offset(3.0, 0.0),
+                            offset: const Offset(3.0, 0.0),
                             spreadRadius: 2.5,
                             blurRadius: 3.0)
                     ]),
                 alignment: _selected
                     ? Alignment.center : AlignmentDirectional.topCenter,
-                duration: Duration(seconds: 2),
+                duration: const Duration(seconds: 2),
                 curve: Curves.fastOutSlowIn,
-                child: FlutterLogo(size: 75.0)),
+                child: const FlutterLogo(size: 75.0)),
             onTap: () => setState(() => _selected = !_selected)));
   }
 }

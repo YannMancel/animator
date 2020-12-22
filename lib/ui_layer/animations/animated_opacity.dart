@@ -23,9 +23,9 @@ class _AnimatedOpacityWidgetState extends State<AnimatedOpacityWidget> {
         child: GestureDetector(
             child: AnimatedOpacity(
                 opacity: _selected ? 1.0 : 0.3,
-                duration: Duration(seconds: 2),
+                duration: const Duration(seconds: 2),
                 curve: Curves.fastOutSlowIn,
-                child: FlutterLogo(size: 200.0)),
+                child: const FlutterLogo(size: 200.0)),
             onTap: () => setState(() => _selected = !_selected)));
   }
 }

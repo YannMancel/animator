@@ -1,5 +1,6 @@
 import 'package:animator/data_layer/section.dart';
 import 'package:animator/ui_layer/animations/animated_container.dart';
+import 'package:animator/ui_layer/animations/animated_cross_fade.dart';
 import 'package:animator/ui_layer/animations/animated_opacity.dart';
 import 'package:animator/ui_layer/animations/fade_in_image.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,11 @@ final animations = <Section>[
   Section(
       title: "AnimatedOpacity",
       icon: Icons.settings,
-      destination: AnimatedOpacityWidget())
+      destination: AnimatedOpacityWidget()),
+  Section(
+      title: "AnimatedCrossFade",
+      icon: Icons.style,
+      destination: AnimatedCrossFadeWidget())
 ];
 
 // -- Images --
