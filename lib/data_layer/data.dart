@@ -2,6 +2,7 @@ import 'package:animator/data_layer/section.dart';
 import 'package:animator/ui_layer/animations/animated_container.dart';
 import 'package:animator/ui_layer/animations/animated_cross_fade.dart';
 import 'package:animator/ui_layer/animations/animated_default_text_style.dart';
+import 'package:animator/ui_layer/animations/animated_list.dart';
 import 'package:animator/ui_layer/animations/animated_opacity.dart';
 import 'package:animator/ui_layer/animations/animated_positioned.dart';
 import 'package:animator/ui_layer/animations/animated_size.dart';
@@ -36,6 +37,10 @@ final animations = <Section>[
       title: "AnimatedPositioned",
       icon: Icons.group,
       destination: AnimatedPositionedWidget()),
+  Section(
+      title: "AnimatedList",
+      icon: Icons.timeline,
+      destination: AnimatedListWidget()),
   Section(
       title: "FadeInImage",
       icon: Icons.local_movies,
