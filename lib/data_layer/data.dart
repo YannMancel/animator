@@ -6,6 +6,7 @@ import 'package:animator/ui_layer/animations/animated_opacity.dart';
 import 'package:animator/ui_layer/animations/animated_positioned.dart';
 import 'package:animator/ui_layer/animations/animated_size.dart';
 import 'package:animator/ui_layer/animations/fade_in_image.dart';
+import 'package:animator/ui_layer/animations/hero.dart';
 import 'package:flutter/material.dart';
 
 // -- Animations --
@@ -15,10 +16,6 @@ final animations = <Section>[
       title: "AnimatedContainer",
       icon: Icons.score,
       destination: AnimatedContainerWidget()),
-  Section(
-      title: "FadeInImage",
-      icon: Icons.local_movies,
-      destination: FadeInImageWidget()),
   Section(
       title: "AnimatedOpacity",
       icon: Icons.settings,
@@ -39,8 +36,25 @@ final animations = <Section>[
       title: "AnimatedPositioned",
       icon: Icons.group,
       destination: AnimatedPositionedWidget()),
+  Section(
+      title: "FadeInImage",
+      icon: Icons.local_movies,
+      destination: FadeInImageWidget()),
+  Section(
+      title: "Hero",
+      icon: Icons.height,
+      destination: HeroWidget()),
 ];
 
 // -- Images --
 
 const imageFlutter = "images/flutter_logo.png";
+
+const images = <String>[
+  'images/Greek Cities/Athens.jpg',
+  'images/Greek Cities/Corfou.jpg',
+  'images/Greek Cities/Delphi.jpg',
+  'images/Greek Cities/Meteores.jpg',
+  'images/Greek Cities/Santorin.jpg',
+  'images/Greek Cities/Sounion.jpg'
+];

@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         appBar: AppBar(
             leading: Container(
-                margin: EdgeInsets.all(5.0),
+                margin: const EdgeInsets.all(5.0),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(50.0)),
@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _getDivider() {
-    return Divider(
+    return const Divider(
       color: Colors.purple,
       indent: 16.0,
       endIndent: 16.0);

@@ -7,8 +7,7 @@ class AnimatedPositionedWidget extends StatefulWidget {
 }
 
 /// A [State] of [AnimatedPositionedWidget] subclass.
-class _AnimatedPositionedWidgetState extends State<AnimatedPositionedWidget>
-                               with SingleTickerProviderStateMixin {
+class _AnimatedPositionedWidgetState extends State<AnimatedPositionedWidget> {
 
   // FIELDS --------------------------------------------------------------------
 
