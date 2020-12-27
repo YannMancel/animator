@@ -8,6 +8,7 @@ import 'package:animator/ui_layer/animations/animated_positioned.dart';
 import 'package:animator/ui_layer/animations/animated_size.dart';
 import 'package:animator/ui_layer/animations/fade_in_image.dart';
 import 'package:animator/ui_layer/animations/hero.dart';
+import 'package:animator/ui_layer/transitions/decorationBoxTransition.dart';
 import 'package:flutter/material.dart';
 
 // -- Animations --
@@ -49,6 +50,10 @@ final animations = <Section>[
       title: "Hero",
       icon: Icons.height,
       destination: HeroWidget()),
+  Section(
+      title: "DecoratedBoxTransition",
+      icon: Icons.animation,
+      destination: DecoratedBoxTransitionWidget()),
 ];
 
 // -- Images --
