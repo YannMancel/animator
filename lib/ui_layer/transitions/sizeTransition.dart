@@ -59,7 +59,7 @@ class _SizeTransitionWidgetState extends State<SizeTransitionWidget>
         parent: _controller,
         curve: Curves.fastOutSlowIn);
 
-    final tween = Tween(begin: 0.2, end: 1.0);
+    final tween = Tween<double>(begin: 0.2, end: 1.0);
 
     _animation = tween.animate(curvedAnimation);
   }

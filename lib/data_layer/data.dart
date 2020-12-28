@@ -14,6 +14,7 @@ import 'package:animator/ui_layer/transitions/positionedTransition.dart';
 import 'package:animator/ui_layer/transitions/rotationTransition.dart';
 import 'package:animator/ui_layer/transitions/scaleTransition.dart';
 import 'package:animator/ui_layer/transitions/sizeTransition.dart';
+import 'package:animator/ui_layer/transitions/slideTransition.dart';
 import 'package:flutter/material.dart';
 
 // -- Animations --
@@ -79,6 +80,10 @@ final animations = <Section>[
       title: "SizeTransition",
       icon: Icons.link,
       destination: SizeTransitionWidget()),
+  Section(
+      title: "SlideTransition",
+      icon: Icons.account_tree,
+      destination: SlideTransitionWidget()),
 ];
 
 // -- Images --

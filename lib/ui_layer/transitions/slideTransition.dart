@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
 /// A [StatefulWidget] subclass.
-class ScaleTransitionWidget extends StatefulWidget {
+class SlideTransitionWidget extends StatefulWidget {
   @override
-  _ScaleTransitionWidgetState createState() => _ScaleTransitionWidgetState();
+  _SlideTransitionWidgetState createState() => _SlideTransitionWidgetState();
 }
 
-/// A [State] of [ScaleTransitionWidget] subclass.
-class _ScaleTransitionWidgetState extends State<ScaleTransitionWidget>
+/// A [State] of [SlideTransitionWidget] subclass.
+class _SlideTransitionWidgetState extends State<SlideTransitionWidget>
                                   with SingleTickerProviderStateMixin {
 
   // FIELDS --------------------------------------------------------------------
 
   AnimationController _controller;
-  Animation<double> _animation;
+  Animation<Offset> _animation;
 
   bool _selected = false;
 
@@ -31,8 +31,8 @@ class _ScaleTransitionWidgetState extends State<ScaleTransitionWidget>
   Widget build(BuildContext context) {
     return Center(
         child: GestureDetector(
-            child: ScaleTransition(
-                scale: _animation,
+            child: SlideTransition(
+                position: _animation,
                 child: const FlutterLogo(size: 200.0)),
             onTap: () => setState(() {
               _selected = !_selected;
@@ -51,13 +51,15 @@ class _ScaleTransitionWidgetState extends State<ScaleTransitionWidget>
   void _configureAnimation() {
     _controller = AnimationController(
         vsync: this,
-        duration: const Duration(seconds: 1));
+        duration: const Duration(seconds: 2));
 
     final curvedAnimation = CurvedAnimation(
         parent: _controller,
-        curve: Curves.fastOutSlowIn);
+        curve: Curves.elasticIn);
 
-    final tween = Tween<double>(begin: 0.3, end: 1.0);
+    final tween = Tween<Offset>(
+        begin: Offset.zero,
+        end: const Offset(0.5, 0.0));
 
     _animation = tween.animate(curvedAnimation);
   }

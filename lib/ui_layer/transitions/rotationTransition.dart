@@ -57,7 +57,7 @@ class _RotationTransitionWidgetState extends State<RotationTransitionWidget>
         parent: _controller,
         curve: Curves.elasticOut);
 
-    final tween = Tween(begin: 0.0, end: 1.0);
+    final tween = Tween<double>(begin: 0.0, end: 1.0);
 
     _animation = tween.animate(curvedAnimation);
   }

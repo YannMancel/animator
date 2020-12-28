@@ -50,7 +50,7 @@ class _AnimatedListWidgetState extends State<AnimatedListWidget> {
         position: animation.drive(
             Tween<Offset>(
                 begin: Offset(1.0, 0.0),
-                end: Offset(0.0, 0.0))),
+                end: Offset.zero)),
         child: Card(
             margin: const EdgeInsets.only(top: 8.0, left: 8.0, right: 8.0),
             child: Container(
