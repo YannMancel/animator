@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
 /// A [StatefulWidget] subclass.
-class DecoratedBoxTransitionWidget extends StatefulWidget {
+class FadeTransitionWidget extends StatefulWidget {
   @override
-  _DecoratedBoxTransitionWidgetState createState() => _DecoratedBoxTransitionWidgetState();
+  _FadeTransitionWidgetState createState() => _FadeTransitionWidgetState();
 }
 
-/// A [State] of [DecoratedBoxTransitionWidget] subclass.
-class _DecoratedBoxTransitionWidgetState extends State<DecoratedBoxTransitionWidget>
-                                         with SingleTickerProviderStateMixin {
+/// A [State] of [FadeTransitionWidget] subclass.
+class _FadeTransitionWidgetState extends State<FadeTransitionWidget>
+                                 with SingleTickerProviderStateMixin {
 
   // FIELDS --------------------------------------------------------------------
 
   AnimationController _controller;
-  Animation<Decoration> _animation;
+  Animation<double> _animation;
 
   bool _selected = false;
 
@@ -31,8 +31,8 @@ class _DecoratedBoxTransitionWidgetState extends State<DecoratedBoxTransitionWid
   Widget build(BuildContext context) {
     return Center(
         child: GestureDetector(
-            child: DecoratedBoxTransition(
-                decoration: _animation,
+            child: FadeTransition(
+                opacity: _animation,
                 child: const FlutterLogo(size: 200.0)),
             onTap: () => setState(() {
               _selected = !_selected;
@@ -55,16 +55,10 @@ class _DecoratedBoxTransitionWidgetState extends State<DecoratedBoxTransitionWid
 
     final curvedAnimation = CurvedAnimation(
         parent: _controller,
-        curve: Curves.elasticInOut);
+        curve: Curves.easeIn);
 
-    final decorationTween = DecorationTween(
-        begin: BoxDecoration(
-            color: Colors.lightBlue,
-            borderRadius: BorderRadius.circular(15.0)),
-        end: BoxDecoration(
-            color: Colors.orange,
-            borderRadius: BorderRadius.circular(100.0)));
+    final tween = Tween(begin: 0.2, end: 1.0);
 
-    _animation = decorationTween.animate(curvedAnimation);
+    _animation = tween.animate(curvedAnimation);
   }
 }
