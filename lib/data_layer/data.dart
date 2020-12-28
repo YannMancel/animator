@@ -11,6 +11,7 @@ import 'package:animator/ui_layer/animations/hero.dart';
 import 'package:animator/ui_layer/transitions/fadeTransition.dart';
 import 'package:animator/ui_layer/transitions/decorationBoxTransition.dart';
 import 'package:animator/ui_layer/transitions/positionedTransition.dart';
+import 'package:animator/ui_layer/transitions/rotationTransition.dart';
 import 'package:flutter/material.dart';
 
 // -- Animations --
@@ -64,6 +65,10 @@ final animations = <Section>[
       title: "PositionedTransition",
       icon: Icons.print,
       destination: PositionedTransitionWidget()),
+  Section(
+      title: "RotationTransition",
+      icon: Icons.sort,
+      destination: RotationTransitionWidget()),
 ];
 
 // -- Images --
