@@ -13,6 +13,7 @@ import 'package:animator/ui_layer/transitions/decorationBoxTransition.dart';
 import 'package:animator/ui_layer/transitions/positionedTransition.dart';
 import 'package:animator/ui_layer/transitions/rotationTransition.dart';
 import 'package:animator/ui_layer/transitions/scaleTransition.dart';
+import 'package:animator/ui_layer/transitions/sizeTransition.dart';
 import 'package:flutter/material.dart';
 
 // -- Animations --
@@ -74,6 +75,10 @@ final animations = <Section>[
       title: "ScaleTransition",
       icon: Icons.opacity,
       destination: ScaleTransitionWidget()),
+  Section(
+      title: "SizeTransition",
+      icon: Icons.link,
+      destination: SizeTransitionWidget()),
 ];
 
 // -- Images --
