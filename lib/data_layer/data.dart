@@ -10,6 +10,7 @@ import 'package:animator/ui_layer/animations/fade_in_image.dart';
 import 'package:animator/ui_layer/animations/hero.dart';
 import 'package:animator/ui_layer/transitions/fadeTransition.dart';
 import 'package:animator/ui_layer/transitions/decorationBoxTransition.dart';
+import 'package:animator/ui_layer/transitions/positionedTransition.dart';
 import 'package:flutter/material.dart';
 
 // -- Animations --
@@ -59,6 +60,10 @@ final animations = <Section>[
       title: "FadeTransition",
       icon: Icons.forward,
       destination: FadeTransitionWidget()),
+  Section(
+      title: "PositionedTransition",
+      icon: Icons.print,
+      destination: PositionedTransitionWidget()),
 ];
 
 // -- Images --
