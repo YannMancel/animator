@@ -1,4 +1,5 @@
 import 'package:animator/data_layer/section.dart';
+import 'package:animator/ui_layer/animations/animated_builder.dart';
 import 'package:animator/ui_layer/animations/animated_container.dart';
 import 'package:animator/ui_layer/animations/animated_cross_fade.dart';
 import 'package:animator/ui_layer/animations/animated_default_text_style.dart';
@@ -8,13 +9,13 @@ import 'package:animator/ui_layer/animations/animated_positioned.dart';
 import 'package:animator/ui_layer/animations/animated_size.dart';
 import 'package:animator/ui_layer/animations/fade_in_image.dart';
 import 'package:animator/ui_layer/animations/hero.dart';
-import 'package:animator/ui_layer/transitions/fadeTransition.dart';
-import 'package:animator/ui_layer/transitions/decorationBoxTransition.dart';
-import 'package:animator/ui_layer/transitions/positionedTransition.dart';
-import 'package:animator/ui_layer/transitions/rotationTransition.dart';
-import 'package:animator/ui_layer/transitions/scaleTransition.dart';
-import 'package:animator/ui_layer/transitions/sizeTransition.dart';
-import 'package:animator/ui_layer/transitions/slideTransition.dart';
+import 'package:animator/ui_layer/transitions/fade_transition.dart';
+import 'package:animator/ui_layer/transitions/decoration_box_transition.dart';
+import 'package:animator/ui_layer/transitions/positioned_transition.dart';
+import 'package:animator/ui_layer/transitions/rotation_transition.dart';
+import 'package:animator/ui_layer/transitions/scale_transition.dart';
+import 'package:animator/ui_layer/transitions/size_transition.dart';
+import 'package:animator/ui_layer/transitions/slide_transition.dart';
 import 'package:flutter/material.dart';
 
 // -- Animations --
@@ -48,6 +49,10 @@ final animations = <Section>[
       title: "AnimatedList",
       icon: Icons.timeline,
       destination: AnimatedListWidget()),
+  Section(
+      title: "AnimatedBuilder",
+      icon: Icons.add_alarm_outlined,
+      destination: AnimatedBuilderWidget()),
   Section(
       title: "FadeInImage",
       icon: Icons.local_movies,
