@@ -5,6 +5,7 @@ import 'package:animator/ui_layer/animations/animated_cross_fade.dart';
 import 'package:animator/ui_layer/animations/animated_default_text_style.dart';
 import 'package:animator/ui_layer/animations/animated_list.dart';
 import 'package:animator/ui_layer/animations/animated_opacity.dart';
+import 'package:animator/ui_layer/animations/animated_physical_model.dart';
 import 'package:animator/ui_layer/animations/animated_positioned.dart';
 import 'package:animator/ui_layer/animations/animated_size.dart';
 import 'package:animator/ui_layer/animations/fade_in_image.dart';
@@ -53,6 +54,10 @@ final animations = <Section>[
       title: "AnimatedBuilder",
       icon: Icons.add_alarm_outlined,
       destination: AnimatedBuilderWidget()),
+  Section(
+      title: "AnimatedPhysicalModel",
+      icon: Icons.accessible_forward_outlined,
+      destination: AnimatedPhysicalModelWidget()),
   Section(
       title: "FadeInImage",
       icon: Icons.local_movies,
