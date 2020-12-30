@@ -1,5 +1,5 @@
 name: animator
-description: A Flutter application to show animations.
+description: A Flutter application to show animations and transitions.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.

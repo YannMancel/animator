@@ -17,6 +17,7 @@ import 'package:animator/ui_layer/transitions/rotation_transition.dart';
 import 'package:animator/ui_layer/transitions/scale_transition.dart';
 import 'package:animator/ui_layer/transitions/size_transition.dart';
 import 'package:animator/ui_layer/transitions/slide_transition.dart';
+import 'package:animator/ui_layer/widgets/animated_menu.dart';
 import 'package:flutter/material.dart';
 
 // -- Animations --
@@ -94,6 +95,10 @@ final animations = <Section>[
       title: "SlideTransition",
       icon: Icons.account_tree,
       destination: SlideTransitionWidget()),
+  Section(
+      title: "Animated Menu",
+      icon: Icons.account_box,
+      destination: AnimatedMenuWidget()),
 ];
 
 // -- Images --
